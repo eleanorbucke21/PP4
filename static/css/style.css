@@ -140,3 +140,16 @@ body {
     background: transparent;
     border: none;
 }
+
+.btn-dislike {
+    color: #445261;
+    border: none;
+    background: transparent;
+}
+
+.btn-dislike:hover,
+.btn-dislike:active {
+    color: #445261;
+    background: transparent;
+    border: none;
+}
