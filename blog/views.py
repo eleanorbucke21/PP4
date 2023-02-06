@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import CreateView
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 
 
 class PostList(generic.ListView):
@@ -73,6 +75,18 @@ class PostDetail(View):
             },
         )
 
+
+class AddPost(LoginRequiredMixin, CreateView):
+    model = Post
+    template_name = 'addpost.html'
+    form_class = PostForm
+
+    def form_valid(self, form):
+        if self.request.POST.get('status'):
+            form.instance.status = int(self.request.POST.get('status'))
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+        
 
 class Likes(View):
     def post(self, request, slug, *args, **kwargs):

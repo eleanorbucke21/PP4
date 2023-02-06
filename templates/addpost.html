@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h1>Add a post:</h1>
+            <p>Here you can share your recipe with other users.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.title | as_crispy_field }}
+                {{ form.content | as_crispy_field }}
+                {{ form.featured_image | as_crispy_field }}
+
+                {% if request.user.is_superuser %}
+                <select name="status" required>
+                    <option value="0" selected>Draft</option>
+                    <option value="1">Published</option>
+                </select>
+                {% endif %}
+
+                <br>
+                <button type="submit" class="btn btn-signup btn-lg m-1"> Submit</button>
+                <a href="{{request.META.HTTP_REFERER}}">Go Back</a>
+            </form>
+        </div>
+    </div>
+    <br>
+</div>
+
+{% endblock %}
