@@ -2,7 +2,8 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView
+from django.urls import reverse_lazy
 from .models import Post
 from .forms import CommentForm, PostForm
 
@@ -58,9 +59,8 @@ class PostDetail(View):
             comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
             comment.post = post
-            comment.save()
-        else:
             comment_form = CommentForm()
+            comment.save()
 
         return render(
             request,
@@ -79,14 +79,36 @@ class PostDetail(View):
 class AddPost(LoginRequiredMixin, CreateView):
     model = Post
     template_name = 'addpost.html'
+    success_url = reverse_lazy('home')
     form_class = PostForm
-
+    
     def form_valid(self, form):
         if self.request.POST.get('status'):
             form.instance.status = int(self.request.POST.get('status'))
         form.instance.author = self.request.user
         return super().form_valid(form)
         
+
+class UpdatePost(LoginRequiredMixin, generic.UpdateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'updatepost.html'
+
+    def get_object(self):
+        return get_object_or_404(Post, slug=self.kwargs.get('slug'))
+
+    def form_valid(self, form):
+        super(PostUpdate, self).form_valid(form)
+        self.object = self.get_object()
+        if self.request.user == self.object.author:
+            form = form.save(commit=False)
+            form.save()
+            messages.info(self.request, "Recipe Updated")
+            return HttpResponseRedirect(self.get_success_url())
+        else:
+            messages.error(self.request, "You can't update this recipe!")
+            return self.render_to_response(self.get_context_data(form=form))
+
 
 class Likes(View):
     def post(self, request, slug, *args, **kwargs):
