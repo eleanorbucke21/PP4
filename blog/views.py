@@ -93,7 +93,8 @@ class EditPost(LoginRequiredMixin, UpdateView):
     model = Post
     form_class = PostForm
     template_name = 'updatepost.html'
-
+    success_url = reverse_lazy('home')
+    
 
 class Likes(View):
     def post(self, request, slug, *args, **kwargs):
