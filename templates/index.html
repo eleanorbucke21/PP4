@@ -22,11 +22,6 @@
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
                                 </div>
-                                <div>
-                                    {% if post.author == request_user %}
-                                    <a href="{% url 'update_post' %}" class="btn btn-info" role="button">Edit your recipe</a>
-                                    {% endif %}
-                                </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug  %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>

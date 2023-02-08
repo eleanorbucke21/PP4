@@ -14,7 +14,8 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://res.cloudinary.com/dwfsh0lgy/image/upload/v1673638074/Foodie/pexels-chan-walrus-958545_tollq2.jpg" width="100%">
+                <img src="https://res.cloudinary.com/dwfsh0lgy/image/upload/v1673638074/Foodie/pexels-chan-walrus-958545_tollq2.jpg"
+                    width="100%">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
@@ -29,47 +30,64 @@
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text ">	
-                    {{ post.content | safe }}	
+                <p class="card-text ">
+                    {{ post.content | safe }}
                 </p>
                 <div class="row">
 
                     <div class="col-1">
-                        <strong>	
-                            {% if user.is_authenticated %}	
-                            <form class="d-inline" action="{% url 'likes' post.slug %}" method="POST">	
-                                {% csrf_token %}	
-                                {% if liked %}	
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>	
-                                {% else %}	
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>	
-                                {% endif %}	
-                            </form>	
-                            {% else %}	
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>	
+                        <strong>
+                            {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'likes' post.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if liked %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                        class="fas fa-heart"></i></button>
+                                {% else %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                        class="far fa-heart"></i></button>
+                                {% endif %}
+                            </form>
+                            {% else %}
+                            <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
-                        <!-- The number of likes goes before the closing strong tag -->
-                        <span class="text-secondary">{{ post.number_of_likes }} </span>	
+                            <!-- The number of likes goes before the closing strong tag -->
+                            <span class="text-secondary">{{ post.number_of_likes }} </span>
                         </strong>
                     </div>
                     <div class="col-1">
-                        <strong>	
-                            {% if user.is_authenticated %}	
-                            <form class="d-inline" action="{% url 'dislikes' post.slug %}" method="POST">	
-                                {% csrf_token %}	
-                                {% if disliked %}	
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-dislike"><i class="fas fa-thumbs-down"></i></button>	
-                                {% else %}	
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-dislike"><i class="fas fa-thumbs-down"></i></button>	
-                                {% endif %}	
-                            </form>	
-                            {% else %}	
-                            <span class="text-secondary"><i class="fas fa-thumbs-down"></i></span>	
+                        <strong>
+                            {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'dislikes' post.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if disliked %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-dislike"><i
+                                        class="fas fa-thumbs-down"></i></button>
+                                {% else %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-dislike"><i
+                                        class="fas fa-thumbs-down"></i></button>
+                                {% endif %}
+                            </form>
+                            {% else %}
+                            <span class="text-secondary"><i class="fas fa-thumbs-down"></i></span>
                             {% endif %}
-                        <!-- The number of dislikes goes before the closing strong tag -->
-                        <span class="text-secondary">{{ post.number_of_dislikes }} </span>	
+                            <!-- The number of dislikes goes before the closing strong tag -->
+                            <span class="text-secondary">{{ post.number_of_dislikes }} </span>
                         </strong>
                     </div>
+                    <!-- Authors can edit or delete their own posts -->
+                    {% if request.user == post.author %}
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 offset-xl-8">
+
+                                <!-- Button for post update -->
+                                <a href="{% url 'update_post' post.slug %}" class="btn btn-signup m-1">
+                                    <i class="fa fa-edit"></i> Edit post</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
                     <div class="col-1">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>

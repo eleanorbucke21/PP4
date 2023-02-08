@@ -89,25 +89,10 @@ class AddPost(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
         
 
-class UpdatePost(LoginRequiredMixin, generic.UpdateView):
+class EditPost(LoginRequiredMixin, UpdateView):
     model = Post
     form_class = PostForm
     template_name = 'updatepost.html'
-
-    def get_object(self):
-        return get_object_or_404(Post, slug=self.kwargs.get('slug'))
-
-    def form_valid(self, form):
-        super(PostUpdate, self).form_valid(form)
-        self.object = self.get_object()
-        if self.request.user == self.object.author:
-            form = form.save(commit=False)
-            form.save()
-            messages.info(self.request, "Recipe Updated")
-            return HttpResponseRedirect(self.get_success_url())
-        else:
-            messages.error(self.request, "You can't update this recipe!")
-            return self.render_to_response(self.get_context_data(form=form))
 
 
 class Likes(View):
