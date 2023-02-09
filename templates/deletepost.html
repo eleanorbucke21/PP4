@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h3>Delete Post:</h3>
+            <br /><br />
+            <h3>Delete: {{ post.title }}</h3>
+            <br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+               <strong>Are you sure you want to delete?</strong>
+                </select>
+                <br>
+                <button type="submit" class="btn btn-danger btn-lg m-1">Delete</button>
+                <a href="{% url 'home' %}" role="button">Go back</a>
+        </div>
+    </div>
+    <br>
+</div>
+
+{% endblock %}

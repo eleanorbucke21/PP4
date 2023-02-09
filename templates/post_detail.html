@@ -84,6 +84,11 @@
                                 <!-- Button for post update -->
                                 <a href="{% url 'update_post' post.slug %}" class="btn btn-signup m-1">
                                     <i class="fa fa-edit"></i> Edit post</a>
+
+                                <!-- Button for deletion-->
+                                <a href="{% url 'delete_post' post.slug %}" class="btn btn-signup m-1">
+                                    <i class="far fa-trash-alt"></i> Delete post</a>
+
                             </div>
                         </div>
                     </div>

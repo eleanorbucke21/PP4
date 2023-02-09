@@ -94,6 +94,13 @@ class EditPost(LoginRequiredMixin, UpdateView):
     form_class = PostForm
     template_name = 'updatepost.html'
     success_url = reverse_lazy('home')
+
+
+class DeletePost(LoginRequiredMixin, generic.DeleteView):
+    model = Post
+    form_class = PostForm
+    template_name = 'deletepost.html'
+    success_url = reverse_lazy('home')
     
 
 class Likes(View):
