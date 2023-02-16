@@ -17,7 +17,7 @@
                                 <img class="card-img-top"
                                     src="https://res.cloudinary.com/dwfsh0lgy/image/upload/v1673638074/Foodie/pexels-chan-walrus-958545_tollq2.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" id="postimage" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
