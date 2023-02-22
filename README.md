@@ -54,10 +54,7 @@ Logout Page
 - The footer has a link to facebook.
 - The footer has a link to Twitter.
 - The footer has a link to my github.
-## Login
-- The login page has a form.
-- The form displays where to type name and password.
-- The form also has an option to tick ✔️ remember me so they won't need to login the next time they visit the page.
+
 ## Register
 - The register page has a form.
 - The form displays the details needed.
@@ -67,3 +64,7 @@ Logout Page
 - If a user uses a common password they will get a warning to choose another.
 <img src="markdown/password.png">
 - Once you register you are re-directed to home page.
+## Login
+- The login page has a form.
+- The form displays where to type name and password.
+- The form also has an option to tick ✔️ remember me so they won't need to login the next time they visit the page.
