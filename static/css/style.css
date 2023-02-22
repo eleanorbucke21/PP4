@@ -140,10 +140,17 @@ img::-moz-selection {
 }
 
 /* page header */
+.site-heading>h1, .subheading {
+    background-color: rgba(255, 255, 255, .8);
+}
+
 .site-heading>h1 {
     font-family: 'Sassy Frass', cursive;
     color: #000;
-    background-color: rgba(255, 255, 255, .8);
+}
+
+.subheading {
+    color: #000;
 }
 
 /* posts */
@@ -179,6 +186,13 @@ img::-moz-selection {
 
 footer li {
     color: #868e96;
+}
+
+/* login, logout brand */
+#bawarchi {
+    font-family: 'Sassy Frass', cursive;
+    font-weight: 400;
+    font-size: 7vh;
 }
 
 @media only screen and (min-width:992px) {
