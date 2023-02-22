@@ -3,6 +3,12 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
  */
+
+
+/* Font for siteheading and brand */
+@import url('https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap');
+
+/* Main */
 body {
     font-size: 20px;
     color: #212529;
@@ -94,6 +100,8 @@ img::-moz-selection {
     background: 0 0
 }
 
+/* Navigation */
+
 #mainNav {
     position: absolute;
     border-bottom: 1px solid #e9ecef;
@@ -121,14 +129,27 @@ img::-moz-selection {
     text-transform: uppercase
 }
 
-#postimage {
-    height: 70vh;
+.navbar-brand {
+    font-family: 'Sassy Frass', cursive;
+    font-size: 5vh;
 }
 
-#bawarchi, .subheading {
-    color: #343a40;
-    -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ffffff;
+.navbar-brand>img {
+    max-height: 17vh;
+    max-width: 5.5vh;
+}
+
+/* page header */
+.site-heading>h1 {
+    font-family: 'Sassy Frass', cursive;
+    color: #000;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+/* posts */
+
+#postimage {
+    height: 70vh;
 }
 
 .btn-like {
@@ -154,6 +175,8 @@ img::-moz-selection {
     border: none;
 }
 
+/* Footer */
+
 footer li {
     color: #868e96;
 }
@@ -166,17 +189,23 @@ footer li {
 
     #mainNav .navbar-brand {
         padding: 10px 20px;
-        color: #fff
+        color: #000;
+        font-size: 7vh;
     }
 
+    .navbar-brand>img {
+        max-height: 17vh;
+        max-width: 9vh;
+    }
+    
     #mainNav .navbar-brand:focus,
     #mainNav .navbar-brand:hover {
-        color: rgba(255, 255, 255, .8)
+        color: rgba(52, 58, 64, .8)
     }
 
     #mainNav .navbar-nav>li.nav-item>a {
         padding: 10px 20px;
-        color: #fff
+        font-size: 100%;
     }
 
     #mainNav .navbar-nav>li.nav-item>a:focus,
@@ -469,4 +498,4 @@ footer .copyright {
 .btn-lg {
     font-size: 16px;
     padding: 25px 35px
-}
+} 

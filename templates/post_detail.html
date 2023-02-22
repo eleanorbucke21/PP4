@@ -62,22 +62,6 @@
                         </strong>
                     </div>
                     <br>
-                    <!-- Authors can edit or delete their own posts -->
-                    {% if request.user == post.author %}
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <!-- Button for post update -->
-                                <a href="{% url 'update_post' post.slug %}" class="btn btn-secondary">
-                                    <i class="fa fa-edit"></i> Edit post</a>
-                                    <br>
-                                <!-- Button for deletion-->
-                                <a href="{% url 'delete_post' post.slug %}" class="btn btn-secondary">
-                                    <i class="far fa-trash-alt"></i> Delete post</a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
                     <div class="col">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>
@@ -97,6 +81,25 @@
             <img src=" {{ post.featured_image.url }}" class="img-thumbnail">
             {% endif %}
         </div>
+        <!-- Authors can edit or delete their own posts -->
+        {% if request.user == post.author %}
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="btn-group">
+                        <!-- Button for post update -->
+                        <a href="{% url 'update_post' post.slug %}" class="btn btn-secondary">
+                            <i class="fa fa-edit"></i> Edit post</a>
+                    </div>
+                    <div class="btn-group">
+                        <!-- Button for deletion-->
+                        <a href="{% url 'delete_post' post.slug %}" class="btn btn-secondary">
+                            <i class="far fa-trash-alt"></i> Delete post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
     </div>
     <div class="row">
         <div class="col">
