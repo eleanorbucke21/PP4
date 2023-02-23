@@ -232,8 +232,20 @@ This website was published using GitHub Pages.
 - Sign in with one of the listed providers and let the workspace start up.
 - Congratulations, you have started your first of many ephemeral developer environments!
 
+### ElephantSQL
+This website was hosted on elephantSQL.
+- Create a new app.
+- Add a name of the app. This name should be a name that helps you identify which application the instance is used by.
+- Select a plan: The plan you would like to have. I used <strong>Tiny Turtle Plan</strong>
+- Select tags: I left this field blank.
+- Select Region: I selected EU-West-1 (IRELAND).
+- Then click review.
+- Check that the details are correct tthen click <strong>"Create Instance"</strong>.
+- Return to the ElephantSQL dashboard and click on the database instance name for this project.
+- In the URL section, click the copy icon to copy the database URL which will then be put into the envy.py file in gitpod.
+
 ### Heroku
-This website was deploed on Heroku. 
+This website was deployed on Heroku. 
 * When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
     1. `heroku/python`
@@ -245,3 +257,18 @@ This website was deploed on Heroku.
 
 ## Credits
 ### Content
+- [Clean Blog](https://startbootstrap.com/theme/clean-blog) A bootstrap blog template used for CSS.
+- [Cloudinary](https://cloudinary.com/) Online library. Cloudinary provides an enterprise-grade, media experience platform for all rich media types. Using AI, automation, and advanced image and video processing capabilities, we remove the hassle of manual digital media requirements and provide a clear path for companies to deliver amazing visuals at scale.
+- [Pexels](https://www.pexels.com/) Online free images. These were used throughout the website.
+
+### Media
+- [Favicon](https://favicon.io/emoji-favicons/curry-rice/) The curry and Rice emoji.
+
+<strong><u>Images Used:</u></strong>
+- [Spice market](https://www.pexels.com/photo/clear-glass-jars-with-assorted-foods-618491/)
+- [Spinach](https://www.pexels.com/photo/green-spinach-in-the-colander-6824476/)
+- [Chana masala](https://www.pexels.com/photo/cooked-food-in-bow-2679501/)
+- [Gulab jamuns](https://www.pexels.com/photo/sweet-crisp-snacks-served-in-brass-cup-8887055/)
+- [Chipatti](https://www.pexels.com/photo/chapati-bread-on-a-woven-basket-9797029/)
+- [Meal laid out](https://www.pexels.com/photo/white-and-brown-cooked-dish-on-white-ceramic-bowls-958545/)
+- [Biryani](https://www.pexels.com/photo/close-up-photo-of-biryani-dish-1624487/)
