@@ -6,6 +6,8 @@ from django.views.generic import CreateView, UpdateView
 from django.urls import reverse_lazy
 from .models import Post
 from .forms import CommentForm, PostForm
+from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 class PostList(generic.ListView):
@@ -41,7 +43,7 @@ class PostDetail(View):
             },
         )
     
-    def post(self, request, slug, *args, **kwargs):
+    def post(self, request, slug, *args, **kwargs,):
 
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -76,11 +78,12 @@ class PostDetail(View):
         )
 
 
-class AddPost(LoginRequiredMixin, CreateView):
+class AddPost(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     model = Post
     template_name = 'addpost.html'
     success_url = reverse_lazy('home')
     form_class = PostForm
+    success_message = 'Post awaiting approval'
     
     def form_valid(self, form):
         if self.request.POST.get('status'):
@@ -89,11 +92,12 @@ class AddPost(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
         
 
-class EditPost(LoginRequiredMixin, UpdateView):
+class EditPost(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     model = Post
     form_class = PostForm
     template_name = 'updatepost.html'
     success_url = reverse_lazy('home')
+    success_message = 'Post successfully updated'
 
 
 class DeletePost(LoginRequiredMixin, generic.DeleteView):
@@ -101,7 +105,13 @@ class DeletePost(LoginRequiredMixin, generic.DeleteView):
     form_class = PostForm
     template_name = 'deletepost.html'
     success_url = reverse_lazy('home')
-    
+    success_message = 'Post successfully deleted'
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message, 'danger')
+
+        return super(DeletePost, self).delete(request, *args, **kwargs)
+
 
 class Likes(View):
     def post(self, request, slug, *args, **kwargs):

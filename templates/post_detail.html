@@ -76,9 +76,9 @@
             <!-- The featured image URL goes in the src attribute -->
             {% if "placeholder" in post.featured_image.url %}
             <img src="https://res.cloudinary.com/dwfsh0lgy/image/upload/v1673638074/Foodie/pexels-chan-walrus-958545_tollq2.jpg"
-                class="img-thumbnail">
+                class="img-thumbnail" alt="spice market">
             {% else %}
-            <img src=" {{ post.featured_image.url }}" class="img-thumbnail">
+            <img src=" {{ post.featured_image.url }}" class="img-thumbnail" alt="user has uploaded a custom image">
             {% endif %}
         </div>
         <!-- Authors can edit or delete their own posts -->

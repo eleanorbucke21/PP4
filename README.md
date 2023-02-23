@@ -200,6 +200,14 @@ Lenovo M1 Tab | No appearance, responsiveness nor functionality issues. | Pass
 Samsung s20 | No appearance, responsiveness nor functionality issues. | Pass
 iphone 12 pro | No appearance, responsiveness nor functionality issues. | Pass
 
+## Bugs
+
+### Solved Bugs
+- When adding success messages I found that there was a bug on the DeletePost view.
+- With this view I had to add different code than the others to correct it.
+- I corrected this by adding this code:
+<img src="markdown/DeleteBug.png">
+
 ## Deployment
  
  ### Github
