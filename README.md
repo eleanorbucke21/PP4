@@ -205,7 +205,7 @@ iphone 12 pro | No appearance, responsiveness nor functionality issues. | Pass
 ### Solved Bugs
 - When adding success messages I found that there was a bug on the DeletePost view.
 - With this view I had to add different code than the others to correct it.
-- I corrected this by adding this code:
+- I corrected this by adding this code from [stack overflow](https://stackoverflow.com/questions/48777015/djangos-successmessagemixin-not-working-with-deleteview)
 <img src="markdown/DeleteBug.png">
 
 ## Deployment
