@@ -107,6 +107,24 @@ Logout Page
 - These colors where chosen to emphasize the images of the recipes.
 
 ## Wireframes
+### Home Page
+<img src="markdown/homepage.png" width="400">
+
+### Registration Page
+<img src="markdown/registration.png" width="400">
+
+### Login Page
+<img src="markdown/login.png" width="400">
+
+### Logout Page
+<img src="markdown/signoutpage.png" width="400">
+
+### Postdetail Page
+<img src="markdown/postdetail.png" width="400">
+
+### Add A Post
+<img src="markdown/addapost.png" width="400">
+
 
 ## Technologies
 ### Languages used
