@@ -162,7 +162,7 @@ img::-moz-selection {
 /* posts */
 
 #postimage {
-    height: 20vh;
+    height: 50vh;
     object-fit: cover;
 }
 
