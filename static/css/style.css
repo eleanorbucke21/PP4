@@ -56,6 +56,11 @@ blockquote {
     color: #868e96
 }
 
+
+.site-heading-parent {
+    z-index: 1;
+}
+
 .section-heading {
     font-size: 36px;
     font-weight: 700;
@@ -151,12 +156,14 @@ img::-moz-selection {
 
 .subheading {
     color: #000;
+    padding: 0 20px;
 }
 
 /* posts */
 
 #postimage {
-    height: 70vh;
+    height: 20vh;
+    object-fit: cover;
 }
 
 .btn-like {

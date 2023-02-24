@@ -29,7 +29,7 @@ class PostDetail(View):
         disliked = False
         if post.dislikes.filter(id=self.request.user.id).exists():
             disliked = True
-        
+
         return render(
             request,
             "post_detail.html",
@@ -42,7 +42,7 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
-    
+
     def post(self, request, slug, *args, **kwargs,):
 
         queryset = Post.objects.filter(status=1)
@@ -84,13 +84,13 @@ class AddPost(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     success_url = reverse_lazy('home')
     form_class = PostForm
     success_message = 'Post awaiting approval'
-    
+
     def form_valid(self, form):
         if self.request.POST.get('status'):
             form.instance.status = int(self.request.POST.get('status'))
         form.instance.author = self.request.user
         return super().form_valid(form)
-        
+
 
 class EditPost(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     model = Post
