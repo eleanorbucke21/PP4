@@ -33,7 +33,7 @@ class Post(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()
-    
+
     def number_of_dislikes(self):
         return self.dislikes.count()
 

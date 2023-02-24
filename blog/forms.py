@@ -18,5 +18,5 @@ class PostForm(forms.ModelForm):
             'featured_image',
         ]
         widgets = {
-    'content': SummernoteWidget(),
-    }
+            'content': SummernoteWidget(),
+                    }

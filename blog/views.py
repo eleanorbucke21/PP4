@@ -124,7 +124,7 @@ class Likes(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class Dislikes(View):    
+class Dislikes(View):
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.dislikes.filter(id=request.user.id).exists():
