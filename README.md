@@ -1,7 +1,7 @@
-<img src="markdown/AmIResponsive.png">
+<img src="markdown/amiresponsive.png" width="100%">
 
 # Bawarchi Khana # 
-A Pakistani recipe blog. This website is deigned to showcase recipes that can be added by either admin or by a user who has registered to the website. Each user has the ability to like and dislike a recipe post. If the user user is also the author of the recipe post they have the option to delete or edit the post. As admin for this blog, they have the option to approve or deny all posts and comments to be published on the website.
+A Pakistani recipe blog. This website is deigned to showcase pakistani recipes that can be added by either admin or by a user who has registered to the website. Each user has the ability to like and dislike a recipe post. If the user user is also the author of the recipe post they have the option to delete or edit the post. As admin for this blog, they have the option to approve or deny all posts and comments to be published on the website.
 
 :desktop_computer: [Live Website] (https://pp4.herokuapp.com/)
 
@@ -60,10 +60,12 @@ Logout Page
 - The register page has a form.
 - The form displays the details needed.
 - If username is already in use it will ask you to fill out form again.
-<img src="markdown/username.png">
+<img src="markdown/username.png" width="300">
+
 - If a user does not put in same password in both password fields they will get a warning to fill out form again.
 - If a user uses a common password they will get a warning to choose another.
-<img src="markdown/password.png">
+<img src="markdown/password.png" width="300">
+
 - Once you register you are re-directed to home page.
 ## Login
 - The login page has a form.
@@ -76,13 +78,14 @@ Logout Page
 - A user is asked if they are sure they want to logout.
 - After clicking <i>signout</i> they are redirected to the home page.
 <img src="markdown/signout.png" width="200">
-## Posts
+
+## <u>Posts</u>
 - The post page displays the recipe.
 - The post has an image that the author of the post chooses to upload.
 
 <u><strong>When user is logged in:</strong></u>
 - The post has two buttons underneath displaying the likes and dislikes. <br>
-<img src="markdown/likedislike1.png" width="100" height="150"> <img src="markdown/likedislike2.png" width="100" height="150">
+<img src="markdown/likedislike1.png" width="200" height="150"> <img src="markdown/likedislike2.png" width="100" height="150">
 
 <u><strong> When user is author of the post: </strong></u>
 - Two buttons display if the user is the author of the post.
@@ -90,23 +93,23 @@ Logout Page
 - A delete button is displayed if the user is the author of the post.
 <img src="markdown/editdelete.png">
 
-## Future Features ##
+## <u>Future Features</u>
 
 - In the future I would like to add an option to download the recipe posts as a pdf to view offline.
 
 # Typography and Color Scheme
 
-## Font
+## <u>Font</u>
 - The font used was from an imported bootstrap template.
 - The fonts used in this template are <i>Open Sans</i> and <i>Lora</i>.
 - The Font used for the website brand is <i>Sassy Frass</i>.
 - The <i>Sassy Frass</i> font was used as it most resembled Urdu, the language of Pakistan.
 
-## Color Scheme
+## <u>Color Scheme</u>
 - The colors used were grey and white.
 - These colors where chosen to emphasize the images of the recipes.
 
-## Wireframes
+## <strong>Wireframes</strong>
 ### Home Page
 <img src="markdown/homepage.png" width="400">
 
@@ -125,9 +128,10 @@ Logout Page
 ### Add A Post
 <img src="markdown/addapost.png" width="400">
 
+<br>
 
-## Technologies
-### Languages used
+# <strong>Technologies</strong>
+### <u>Languages used</u>
 - [HTML](https://en.wikipedia.org/wiki/HTML5) - Add content and formatting to web page.
 
 - [CSS](https://en.wikipedia.org/wiki/CSS) - Add styling and colours to web page.
@@ -136,7 +140,7 @@ Logout Page
 
 - [Django](https://en.wikipedia.org/wiki/Django_(web_framework)) - A Python-based web framework that follows the model–template–views (MTV) architectural pattern. 
 
-### Frameworks, Libraries and Programs Used
+### <u>Frameworks, Libraries and Programs Used</u>
 
 - [Gitpod](https://gitpod.io/) - web-based editor optimised for debugging, testing, syntax highlighting and extension support.
 
@@ -154,17 +158,50 @@ Logout Page
 
 - [Favicon](https://favicon.io/) - to insert icons in the website to make site more visually appealing.
 
-## Testing
+## <strong>Testing</strong>
+- [W3C Markup Validation Serice](https://validator.w3.org/) was used to test for error codes in the HTML.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  was used to test for error codes in the CSS.
+- [CI Python Linter](https://pep8ci.herokuapp.com/) was used to detect errors and potential problems in JavaScript code.
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
     was used during the development process to test, debug, explore and modify HTML elements, and to test responsiveness in different screen sizes.
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  was used to test for error codes in the CSS.
-- [W3C Markup Validation Serice](https://validator.w3.org/) was used to test for error codes in the HTML.
-- [JSHint](https://jshint.com/) was used to detect errors and potential problems in JavaScript code.
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used for improving the quality of web page. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
-## Testing
+### <u>Website validation testing</u>
+<br>
+
+### <u>W3C Markup Validation Serice</u>
+No errors were recieved on the pages except for the post detail page which recieved one error.
+|Error |Error explanation| Code |
+| ------------- | ------------- |------------- |
+| <img src="markdown/error.png" width="200"> | <img src="markdown/errorexplain.png" width="200"> |<img src="markdown/errorcode.png" width="200">|
+
+### <u>W3C CSS Validator</u>
+No errors were recieved on the pages. <br>
+<img src="markdown/css.png" width="200">
+
+### <u>Code Institute Python Linter</u>
+
+- bawarchikhana/settings.py <br>
+<img src="markdown/bawarchikhana-settings-py.png" width="250">
+
+- bawarchikhana/urls.py <br>
+<img src="markdown/bawarchikhana-urls-py.png" width="250">
+
+- blog/admin.py , blog/forms.py, blog/models.py, blog/views.py.<br>
+<img src="markdown/blog-admin-forms-models-views.png" width="250">
+
+- blog/urls.py. <br>
+<img src="markdown/blog-urls.png" width="250">
 
 ### <u>Lighthouse</u>
+|Page | Mobile  | Computer|
+| ------------- | ------------- |------------- |
+| Index | <img src="markdown/Mindex.png" width="250">| <img src="markdown/cindex.png" width="250">
+| Register |<img src="markdown/mregister.png" width="250">| <img src="markdown/cregister.png" width="250">
+| Sign In |<img src="markdown/msignnin.png" width="250">| <img src="markdown/csignin.png" width="250">
+| Logout |<img src="markdown/mlogout.png" width="250">|<img src="markdown/clogout.png" width="250">
+| Add A Post |<img src="markdown/maddapost.png" width="250"> |<img src="markdown/caddapost.png" width="250">
+| Post Detail |<img src="markdown/mpostdetail.png" width="250"> | <img src="markdown/cpostdetail.png" width="250">
 
 ### <u>Responsiveness</u>
 [Am I Responsive?](http://ami.responsivedesign.is/#) was used to check responsiveness of the site pages across different devices.
@@ -190,7 +227,7 @@ Safari | No appearance, responsiveness nor functionality issues. | Pass
 Microsoft Edge | No appearance, responsiveness nor functionality issues. | Pass
 Firefox | No appearance, responsiveness nor functionality issues. | Pass
 
-Device compatibility
+Device compatibility:
 
 Device | Outcome | Pass/Fail
 --- | --- | ---
@@ -200,17 +237,20 @@ Lenovo M1 Tab | No appearance, responsiveness nor functionality issues. | Pass
 Samsung s20 | No appearance, responsiveness nor functionality issues. | Pass
 iphone 12 pro | No appearance, responsiveness nor functionality issues. | Pass
 
-## Bugs
+## <strong>Bugs</strong>
 
-### Solved Bugs
+### <u>Unsolved Bugs</u>
+- The navigation bar continues to move around the screen even with it being set to absolute. I have been unable to solve the issue. 
+
+### <u>Solved Bugs</u>
 - When adding success messages I found that there was a bug on the DeletePost view.
 - With this view I had to add different code than the others to correct it.
 - I corrected this by adding this code from [stack overflow](https://stackoverflow.com/questions/48777015/djangos-successmessagemixin-not-working-with-deleteview)
 <img src="markdown/DeleteBug.png">
 
-## Deployment
+## <strong>Deployment</strong>
  
- ### Github
+ ### <u>Github</u>
 
 This website was published using GitHub Pages.
 
@@ -232,7 +272,7 @@ This website was published using GitHub Pages.
  
  This website was written on Gitpod.
  
- ### Gitpod
+ ### <u>Gitpod</u>
  - Navigate to [Gitpod] through [GitHub](https://github.com/), [GitLab](https://www.gitlab.com/).
 - In the browser’s address bar, prefix the entire URL with gitpod.io/# and press Enter.
 - For example, gitpod.io/#https://github.com/gitpod-io/website
@@ -240,7 +280,7 @@ This website was published using GitHub Pages.
 - Sign in with one of the listed providers and let the workspace start up.
 - Congratulations, you have started your first of many ephemeral developer environments!
 
-### ElephantSQL
+### <u>ElephantSQL</u>
 This website was hosted on elephantSQL.
 - Create a new app.
 - Add a name of the app. This name should be a name that helps you identify which application the instance is used by.
@@ -252,7 +292,7 @@ This website was hosted on elephantSQL.
 - Return to the ElephantSQL dashboard and click on the database instance name for this project.
 - In the URL section, click the copy icon to copy the database URL which will then be put into the envy.py file in gitpod.
 
-### Heroku
+### <u>Heroku</u>
 This website was deployed on Heroku. 
 * When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
@@ -263,13 +303,13 @@ This website was deployed on Heroku.
 * If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 * Connect your GitHub repository and deploy as normal.
 
-## Credits
-### Content
+## <strong>Credits</strong>
+### <u>Content</u>
 - [Clean Blog](https://startbootstrap.com/theme/clean-blog) A bootstrap blog template used for CSS.
 - [Cloudinary](https://cloudinary.com/) Online library. Cloudinary provides an enterprise-grade, media experience platform for all rich media types. Using AI, automation, and advanced image and video processing capabilities, we remove the hassle of manual digital media requirements and provide a clear path for companies to deliver amazing visuals at scale.
 - [Pexels](https://www.pexels.com/) Online free images. These were used throughout the website.
 
-### Media
+### <u>Media</u>
 - [Favicon](https://favicon.io/emoji-favicons/curry-rice/) The curry and Rice emoji.
 
 <strong><u>Images Used:</u></strong>

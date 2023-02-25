@@ -161,7 +161,7 @@ img::-moz-selection {
 
 /* posts */
 
-#postimage {
+.card-img-top {
     height: 50vh;
     object-fit: cover;
 }
@@ -244,7 +244,7 @@ footer li {
     }
 
     #mainNav.is-fixed {
-        position: fixed;
+        position: absolute;
         top: -67px;
         transition: transform .2s;
         border-bottom: 1px solid #fff;
