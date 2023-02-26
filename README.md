@@ -161,7 +161,7 @@ Logout Page
 ## <strong>Testing</strong>
 - [W3C Markup Validation Serice](https://validator.w3.org/) was used to test for error codes in the HTML.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  was used to test for error codes in the CSS.
-- [CI Python Linter](https://pep8ci.herokuapp.com/) was used to detect errors and potential problems in JavaScript code.
+- [CI Python Linter](https://pep8ci.herokuapp.com/) was used to detect errors and potential problems in Python code.
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
     was used during the development process to test, debug, explore and modify HTML elements, and to test responsiveness in different screen sizes.
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used for improving the quality of web page. It has audits for performance, accessibility, progressive web apps, SEO, and more.
@@ -173,11 +173,11 @@ Logout Page
 No errors were recieved on the pages except for the post detail page which recieved one error.
 |Error |Error explanation| Code |
 | ------------- | ------------- |------------- |
-| <img src="markdown/error.png" width="200"> | <img src="markdown/errorexplain.png" width="200"> |<img src="markdown/errorcode.png" width="200">|
+| <img src="markdown/error.png" width="400"> | <img src="markdown/errorexplain.png" width="400"> |<img src="markdown/errorcode.png" width="400">|
 
 ### <u>W3C CSS Validator</u>
 No errors were recieved on the pages. <br>
-<img src="markdown/css.png" width="200">
+<img src="markdown/css.png" width="400">
 
 ### <u>Code Institute Python Linter</u>
 
@@ -295,6 +295,7 @@ iphone 12 pro | No appearance, responsiveness nor functionality issues. | Pass
 - When adding success messages I found that there was a bug on the DeletePost view.
 - With this view I had to add different code than the others to correct it.
 - I corrected this by adding this code from [stack overflow](https://stackoverflow.com/questions/48777015/djangos-successmessagemixin-not-working-with-deleteview)
+
 <img src="markdown/DeleteBug.png">
 
 ## <strong>Deployment</strong>
@@ -359,7 +360,8 @@ This website was deployed on Heroku.
 - [Pexels](https://www.pexels.com/) Online free images. These were used throughout the website.
 
 ### <u>Media</u>
-- [Favicon](https://favicon.io/emoji-favicons/curry-rice/) The curry and Rice emoji.
+- [Favicon](https://favicon.io/emoji-favicons/curry-rice/) The curry and Rice emoji. <br>
+<img src="static/favicon/favicon.ico">
 
 <strong><u>Images Used:</u></strong>
 - [Spice market](https://www.pexels.com/photo/clear-glass-jars-with-assorted-foods-618491/)
