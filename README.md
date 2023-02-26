@@ -237,6 +237,55 @@ Lenovo M1 Tab | No appearance, responsiveness nor functionality issues. | Pass
 Samsung s20 | No appearance, responsiveness nor functionality issues. | Pass
 iphone 12 pro | No appearance, responsiveness nor functionality issues. | Pass
 
+ ## Test cases
+ ### Navigation Bar<strong> (Not logged in)</strong>
+ 
+| Input | Output | Pass/Fail |
+|--- | --- | --- |
+|  Clicked on Home in navigation bar. | It refreshed the page. | Pass
+|  Clicked on the navbrand in navigation bar. | It refreshed the page. | Pass
+| Clicked on register in navigation bar. | It went to the registration page. | Pass
+| Clicked on Login in navigation bar.  | It went to the login page.| Pass
+
+ ### Navigation Bar<strong> (Logged in)</strong>
+ 
+| Input | Output | Pass/Fail |
+|--- | --- | --- |
+|  Clicked on Home in navigation bar. | It refreshed the page. | Pass
+|  Clicked on the navbrand in navigation bar. | It refreshed the page. | Pass
+| Clicked on Add a Recipe in navigation bar. | It went to the add a recipe page. | Pass
+| Clicked on Logout in navigation bar.  | It went to the logout page.| Pass
+
+ ### Footer Bar
+ 
+| Input | Output | Pass/Fail |
+|--- | --- | --- |
+|  Clicked on Twitter icon. | It opened twitter in a new page.| Pass
+|  Clicked on Facebook icon. | It opened facebook in a new page.| Pass
+|  Clicked on Github icon. | It opened my [github](https://github.com/eleanorbucke21). | Pass
+
+ ### Index Page
+ 
+| Input | Output | Pass/Fail |
+|--- | --- | --- |
+|  Clicked on Post on index page. | It went to the Post page | Pass
+|  On Login. | recieves notification that I was signed in. | Pass
+|  On Logout. | recieves notification that I was signed out. | Pass
+
+ ### Add a Post Page <strong>(Logged in)</strong>
+ 
+| Input | Output | Pass/Fail |
+|--- | --- | --- |
+|  Added a post on add a post page. | Recived notification that post is submitted for approval.  | Pass
+
+ ### Post Page <strong>(Logged in)</strong>
+ 
+| Input | Output | Pass/Fail |
+|--- | --- | --- |
+|  Clicked on like(heart icon). | The number of the likes went up.  | Pass
+|  Clicked on dislike(thumbs down icon). | The number of the dislikes went up.  | Pass
+|  Wrote a comment. | Recieved notification of comment is awaiting approval.  | Pass
+
 ## <strong>Bugs</strong>
 
 ### <u>Unsolved Bugs</u>
