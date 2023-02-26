@@ -357,7 +357,14 @@ This website was deployed on Heroku.
 ### <u>Content</u>
 - [Clean Blog](https://startbootstrap.com/theme/clean-blog) A bootstrap blog template used for CSS.
 - [Cloudinary](https://cloudinary.com/) Online library. Cloudinary provides an enterprise-grade, media experience platform for all rich media types. Using AI, automation, and advanced image and video processing capabilities, we remove the hassle of manual digital media requirements and provide a clear path for companies to deliver amazing visuals at scale.
+- [Balsamiq](https://balsamiq.com/) used to create the wireframes.
 - [Pexels](https://www.pexels.com/) Online free images. These were used throughout the website.
+- [Clean Blog template] (https://startbootstrap.com/theme/clean-blog). This template was used. 
+- Code Institute tutors. Helped when I was struggling with some aspects of the website and code not working. 
+
+### <u>Code & Tutorials</u>
+- [Building A blog with application Django] (https://djangocentral.com/building-a-blog-application-with-django/)
+- Mentor helped with bootstrap in positioning the post detail image and the post on smaller screens. Also with issue where the white background on the side heading was gray instead of white by usinf z-index in the css file. 
 
 ### <u>Media</u>
 - [Favicon](https://favicon.io/emoji-favicons/curry-rice/) The curry and Rice emoji.
