@@ -97,6 +97,8 @@ Logout Page
 ## <u>Future Features</u>
 
 - In the future I would like to add an option to download the recipe posts as a pdf to view offline.
+- In the future I would like to add a search option for the website to allow users to search.
+- In the future I would like to enable editing comments. 
 
 # Typography and Color Scheme
 
