@@ -25,7 +25,7 @@ Homepage <strong><u>(Logged in) </u></strong>
 
 Admin Page
 
-<i>To access the admin page type <strong>/admin</strong> at the end of the address bar</u>
+<i>To access the admin page type <strong>/admin</strong> at the end of the address bar</i>
 - As an admin I want to be able to add posts.
 - As an admin I want to be able to approve or not approve posts.
 - As an admin I want to be able to approve or not approve comments. 
