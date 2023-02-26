@@ -7,7 +7,11 @@ A Pakistani recipe blog. This website is deigned to showcase pakistani recipes t
 
 :open_file_folder: [Github Repository] (https://github.com/eleanorbucke21/PP4)
 
-## UX
+# User Experience
+
+### Agile
+
+I implemented agile methodology when creating this website. The link to the project board can be found [here](https://github.com/users/eleanorbucke21/projects/9)
 
 ### User Stories
 
@@ -97,6 +101,7 @@ Logout Page
 ## <u>Future Features</u>
 
 - In the future I would like to add an option to download the recipe posts as a pdf to view offline.
+- I would also like to create a search option in the navigation bar for users. 
 
 # Typography and Color Scheme
 
@@ -158,6 +163,8 @@ Logout Page
 - [Google Fonts](https://fonts.google.com/) - used to import fonts in the style.css stylesheet.
 
 - [Favicon](https://favicon.io/) - to insert icons in the website to make site more visually appealing.
+
+- [bootstrap-clean-blog](https://github.com/StartBootstrap/startbootstrap-clean-blog) - A bootstrap blog template imported in for CSS.
 
 ## <strong>Testing</strong>
 - [W3C Markup Validation Serice](https://validator.w3.org/) was used to test for error codes in the HTML.
@@ -356,7 +363,8 @@ This website was deployed on Heroku.
 
 ## <strong>Credits</strong>
 ### <u>Content</u>
-- [Clean Blog](https://startbootstrap.com/theme/clean-blog) A bootstrap blog template used for CSS.
+- [startbootstrap.com Clean Blog](https://startbootstrap.com/theme/clean-blog) A bootstrap blog template used for CSS.
+- [Clean Blog Github repository](https://github.com/StartBootstrap/startbootstrap-clean-blog) A bootstrap blog template used for CSS.
 - [Cloudinary](https://cloudinary.com/) Online library. Cloudinary provides an enterprise-grade, media experience platform for all rich media types. Using AI, automation, and advanced image and video processing capabilities, we remove the hassle of manual digital media requirements and provide a clear path for companies to deliver amazing visuals at scale.
 - [Balsamiq](https://balsamiq.com/) used to create the wireframes.
 - [Pexels](https://www.pexels.com/) Online free images. These were used throughout the website.
@@ -364,7 +372,7 @@ This website was deployed on Heroku.
 - Code Institute tutors. Helped when I was struggling with some aspects of the website and code not working. 
 
 ### <u>Code & Tutorials</u>
-- [Building A blog with application Django] (https://djangocentral.com/building-a-blog-application-with-django/)
+- [Building A blog with application Django](https://djangocentral.com/building-a-blog-application-with-django/)
 - Mentor helped with bootstrap in positioning the post detail image and the post on smaller screens. Also with issue where the white background on the side heading was gray instead of white by usinf z-index in the css file. 
 
 ### <u>Media</u>
