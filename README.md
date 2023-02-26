@@ -74,6 +74,7 @@ Logout Page
 - If a user enters the incorrect username they will recieve an error.
 - If a user enters the incorrect password they will recieve an error.
 <img src="markdown/loginerror.png">
+
 ## Logout
 - A user is asked if they are sure they want to logout.
 - After clicking <i>signout</i> they are redirected to the home page.
