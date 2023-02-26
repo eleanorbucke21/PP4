@@ -1,7 +1,7 @@
 <img src="markdown/amiresponsive.png" width="100%">
 
 # Bawarchi Khana # 
-A Pakistani recipe blog. This website is deigned to showcase pakistani recipes that can be added by either admin or by a user who has registered to the website. Each user has the ability to like and dislike a recipe post. If the user user is also the author of the recipe post they have the option to delete or edit the post. As admin for this blog, they have the option to approve or deny all posts and comments to be published on the website.
+A Pakistani recipe blog. This website is deigned to showcase pakistani recipes that can be added by either admin or by a user who has registered to the website. Each user has the ability to like and dislike a recipe post. If the user is also the author of the recipe post they have the option to delete or edit the post. As admin for this blog, they have the option to approve or deny all posts and comments to be published on the website.
 
 :desktop_computer: [Live Website] (https://pp4.herokuapp.com/)
 
@@ -141,31 +141,20 @@ Logout Page
 # <strong>Technologies</strong>
 ### <u>Languages used</u>
 - [HTML](https://en.wikipedia.org/wiki/HTML5) - Add content and formatting to web page.
-
 - [CSS](https://en.wikipedia.org/wiki/CSS) - Add styling and colours to web page.
-
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Add interactive features to web page.
-
 - [Django](https://en.wikipedia.org/wiki/Django_(web_framework)) - A Python-based web framework that follows the model–template–views (MTV) architectural pattern. 
 
 ### <u>Frameworks, Libraries and Programs Used</u>
 
 - [Gitpod](https://gitpod.io/) - web-based editor optimised for debugging, testing, syntax highlighting and extension support.
-
 - [Git](https://git-scm.com/) - used to allow for tracking of any changes in the code and for the version control.
-
 - [Github](https://github.com/) - used to host the project files and host webpage onto the internet.
-
 - [Heroku](https://www.heroku.com/) - A cloud platform service that supports several programming languages.
-
 - [ElephantSQL](https://www.elephantsql.com/) - Also known as postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.
-
 - [Fontawesome](https://fontawesome.com/) - to insert icons in the website to make site more visually appealing and easy to navigate.
-
 - [Google Fonts](https://fonts.google.com/) - used to import fonts in the style.css stylesheet.
-
 - [Favicon](https://favicon.io/) - to insert icons in the website to make site more visually appealing.
-
 - [bootstrap-clean-blog](https://github.com/StartBootstrap/startbootstrap-clean-blog) - A bootstrap blog template imported in for CSS.
 
 ## <strong>Testing</strong>
@@ -177,7 +166,9 @@ Logout Page
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used for improving the quality of web page. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
 ### <u>Website validation testing</u>
-<br>
+
+### <u>JShint</u>
+I did not perform any validation on javascript as all the javascript was imported in from [clean blog](https://github.com/StartBootstrap/startbootstrap-clean-blog).
 
 ### <u>W3C Markup Validation Serice</u>
 No errors were recieved on the pages except for the post detail page which recieved one error.
@@ -370,7 +361,6 @@ This website was deployed on Heroku.
 - [Cloudinary](https://cloudinary.com/) Online library. Cloudinary provides an enterprise-grade, media experience platform for all rich media types. Using AI, automation, and advanced image and video processing capabilities, we remove the hassle of manual digital media requirements and provide a clear path for companies to deliver amazing visuals at scale.
 - [Balsamiq](https://balsamiq.com/) used to create the wireframes.
 - [Pexels](https://www.pexels.com/) Online free images. These were used throughout the website.
-- [Clean Blog template] (https://startbootstrap.com/theme/clean-blog). This template was used. 
 - Code Institute tutors. Helped when I was struggling with some aspects of the website and code not working. 
 
 ### <u>Code & Tutorials</u>
