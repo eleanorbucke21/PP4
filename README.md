@@ -29,6 +29,7 @@ Homepage <strong><u>(Logged in) </u></strong>
 
 Admin Page
 
+<i>To access the admin page type <strong>/admin</strong> at the end of the address bar</i>
 - As an admin I want to be able to add posts.
 - As an admin I want to be able to approve or not approve posts.
 - As an admin I want to be able to approve or not approve comments. 
@@ -101,7 +102,8 @@ Logout Page
 ## <u>Future Features</u>
 
 - In the future I would like to add an option to download the recipe posts as a pdf to view offline.
-- I would also like to create a search option in the navigation bar for users. 
+- In the future I would like to add a search option for the website to allow users to search.
+- In the future I would like to enable editing comments. 
 
 # Typography and Color Scheme
 
