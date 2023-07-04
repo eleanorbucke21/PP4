@@ -12,7 +12,8 @@ A Pakistani recipe blog. Bawarchi khana means kitchen in Urdu. This website is d
 
 **TABLE OF CONTENTS**
 * [USER EXPERIENCE](#user-experience)
-* [User Stories](#user-stories)
+     * [Agile](###agile)
+* [User Stories](###user-stories)
     * [Navigation](###HomePage)
     * [Admin](##Admin)
     * [Register](###Register)
@@ -33,8 +34,8 @@ A Pakistani recipe blog. Bawarchi khana means kitchen in Urdu. This website is d
 * [Technologies Used](#technologies-used)
     * [Languages Used](###ulanguages-usedu)
     * [Frameworks, Libraries and Programs Used](###uFrameworks-Libraries-and-Programs-Usedu)
+---
 # User Experience
-
 ### Agile
 
 I implemented agile methodology when creating this website. The link to the project board can be found [here](https://github.com/users/eleanorbucke21/projects/9)
