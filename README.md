@@ -1,5 +1,6 @@
 <img src="markdown/amiresponsive.png" width="100%">
 
+---
 # Bawarchi Khana # 
 A Pakistani recipe blog. Bawarchi khana means kitchen in Urdu. This website is deigned to showcase pakistani recipes that can be added by either admin or by a user who has registered to the website. Each user has the ability to like and dislike a recipe post. If the user is also the author of the recipe post they have the option to delete or edit the post. As admin for this blog, they have the option to approve or deny all posts and comments to be published on the website.
 
@@ -7,6 +8,31 @@ A Pakistani recipe blog. Bawarchi khana means kitchen in Urdu. This website is d
 
 :open_file_folder: [Github Repository] (https://github.com/eleanorbucke21/PP4)
 
+---
+
+**TABLE OF CONTENTS**
+* [USER EXPERIENCE](#user-experience)
+* [User Stories](#user-stories)
+    * [Navigation](###HomePage)
+    * [Admin](##Admin)
+    * [Register](###Register)
+    * [Logout](##Login)
+    * [Logout](##Logout)
+* [Features](#features)
+    * [Navigation](##Navigation)
+    * [Header](##Header)
+    * [Footer](##Footer)
+    * [Register](##Register)
+    * [Logout](##Logout)
+    * [Posts](#posts)
+* [Future Features](#ufuture-featuresu)
+* [Typographyand Color Scheme](#typography-and-color-scheme)
+    * [Font](##Font)
+    * [Color Scheme](##color)
+* [Wireframes](#wireframes)
+* [Technologies Used](#technologies-used)
+    * [Languages Used](###ulanguages-usedu)
+    * [Frameworks, Libraries and Programs Used](###uFrameworks-Libraries-and-Programs-Usedu)
 # User Experience
 
 ### Agile
@@ -15,7 +41,7 @@ I implemented agile methodology when creating this website. The link to the proj
 
 ### User Stories
 
-HomePage <strong><u>(Not logged in)</u></strong>
+### HomePage <strong><u>(Not logged in)</u></strong>
 
 - As a user I want to be able to tell what the website is about.
 - As a user I want to see the posts.
@@ -157,203 +183,20 @@ Logout Page
 - [Favicon](https://favicon.io/) - to insert icons in the website to make site more visually appealing.
 - [bootstrap-clean-blog](https://github.com/StartBootstrap/startbootstrap-clean-blog) - A bootstrap blog template imported in for CSS.
 
-## <strong>Testing</strong>
-- [W3C Markup Validation Serice](https://validator.w3.org/) was used to test for error codes in the HTML.
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  was used to test for error codes in the CSS.
-- [CI Python Linter](https://pep8ci.herokuapp.com/) was used to detect errors and potential problems in Python code.
-- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
-    was used during the development process to test, debug, explore and modify HTML elements, and to test responsiveness in different screen sizes.
-- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used for improving the quality of web page. It has audits for performance, accessibility, progressive web apps, SEO, and more.
+---
+# **TESTING**
+Please refer to [TESTING.md](./TESTING.md) file for:
+* Automated Testing and Validation Results
+* Manual Testing and Results
 
-### <u>Website validation testing</u>
+---
+# **DEPLOYMENT**
+Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
+* Creating the database to be used in production
+* Deploying to Heroku
+* Setting up AmazonS3 for hosting our static and media files
 
-### <u>JShint</u>
-I did not perform any validation on javascript as all the javascript was imported in from [clean blog](https://github.com/StartBootstrap/startbootstrap-clean-blog).
-
-### <u>W3C Markup Validation Serice</u>
-No errors were recieved on the pages except for the post detail page which recieved one error.
-|Error |Error explanation| Code |
-| ------------- | ------------- |------------- |
-| <img src="markdown/error.png" width="400"> | <img src="markdown/errorexplain.png" width="400"> |<img src="markdown/errorcode.png" width="400">|
-
-### <u>W3C CSS Validator</u>
-No errors were recieved on the pages. <br>
-<img src="markdown/css.png" width="400">
-
-### <u>Code Institute Python Linter</u>
-
-- bawarchikhana/settings.py <br>
-<img src="markdown/bawarchikhana-settings-py.png" width="250">
-
-- bawarchikhana/urls.py <br>
-<img src="markdown/bawarchikhana-urls-py.png" width="250">
-
-- blog/admin.py , blog/forms.py, blog/models.py, blog/views.py.<br>
-<img src="markdown/blog-admin-forms-models-views.png" width="250">
-
-- blog/urls.py. <br>
-<img src="markdown/blog-urls.png" width="250">
-
-### <u>Lighthouse</u>
-|Page | Mobile  | Computer|
-| ------------- | ------------- |------------- |
-| Index | <img src="markdown/Mindex.png" width="250">| <img src="markdown/cindex.png" width="250">
-| Register |<img src="markdown/mregister.png" width="250">| <img src="markdown/cregister.png" width="250">
-| Sign In |<img src="markdown/msignnin.png" width="250">| <img src="markdown/csignin.png" width="250">
-| Logout |<img src="markdown/mlogout.png" width="250">|<img src="markdown/clogout.png" width="250">
-| Add A Post |<img src="markdown/maddapost.png" width="250"> |<img src="markdown/caddapost.png" width="250">
-| Post Detail |<img src="markdown/mpostdetail.png" width="250"> | <img src="markdown/cpostdetail.png" width="250">
-
-### <u>Responsiveness</u>
-[Am I Responsive?](http://ami.responsivedesign.is/#) was used to check responsiveness of the site pages across different devices.
- 
- The site has been tested on various sizes such as those listed below.
- 
- <strong>Mobile:</strong>
- 375x667 / 360x740 / 412x915 / 414x896
- 
- <strong>Tablet:</strong>
- 768x1024 / 820x1180 / 912x1368 
- 
-<strong>Monitor:</strong>
- 1280x1024 / 1600x900 / 2560x1440 / 3440x1440
-
-### <u>Manual Testing</u>
-Browser Compatibility:
-
-Browser | Outcome | Pass/Fail 
- --- | --- | ---
-Google Chrome | No appearance, responsiveness nor functionality issues.| Pass
-Safari | No appearance, responsiveness nor functionality issues. | Pass
-Microsoft Edge | No appearance, responsiveness nor functionality issues. | Pass
-Firefox | No appearance, responsiveness nor functionality issues. | Pass
-
-Device compatibility:
-
-Device | Outcome | Pass/Fail
---- | --- | ---
-Laptop | No appearance, responsiveness nor functionality issues. | Pass
-ipad mini | No appearance, responsiveness nor functionality issues. | Pass
-Lenovo M1 Tab | No appearance, responsiveness nor functionality issues. | Pass
-Samsung s20 | No appearance, responsiveness nor functionality issues. | Pass
-iphone 12 pro | No appearance, responsiveness nor functionality issues. | Pass
-
- ## Test cases
- ### Navigation Bar<strong> (Not logged in)</strong>
- 
-| Input | Output | Pass/Fail |
-|--- | --- | --- |
-|  Clicked on Home in navigation bar. | It refreshed the page. | Pass
-|  Clicked on the navbrand in navigation bar. | It refreshed the page. | Pass
-| Clicked on register in navigation bar. | It went to the registration page. | Pass
-| Clicked on Login in navigation bar.  | It went to the login page.| Pass
-
- ### Navigation Bar<strong> (Logged in)</strong>
- 
-| Input | Output | Pass/Fail |
-|--- | --- | --- |
-|  Clicked on Home in navigation bar. | It refreshed the page. | Pass
-|  Clicked on the navbrand in navigation bar. | It refreshed the page. | Pass
-| Clicked on Add a Recipe in navigation bar. | It went to the add a recipe page. | Pass
-| Clicked on Logout in navigation bar.  | It went to the logout page.| Pass
-
- ### Footer Bar
- 
-| Input | Output | Pass/Fail |
-|--- | --- | --- |
-|  Clicked on Twitter icon. | It opened twitter in a new page.| Pass
-|  Clicked on Facebook icon. | It opened facebook in a new page.| Pass
-|  Clicked on Github icon. | It opened my [github](https://github.com/eleanorbucke21). | Pass
-
- ### Index Page
- 
-| Input | Output | Pass/Fail |
-|--- | --- | --- |
-|  Clicked on Post on index page. | It went to the Post page | Pass
-|  On Login. | recieves notification that I was signed in. | Pass
-|  On Logout. | recieves notification that I was signed out. | Pass
-
- ### Add a Post Page <strong>(Logged in)</strong>
- 
-| Input | Output | Pass/Fail |
-|--- | --- | --- |
-|  Added a post on add a post page. | Recived notification that post is submitted for approval.  | Pass
-
- ### Post Page <strong>(Logged in)</strong>
- 
-| Input | Output | Pass/Fail |
-|--- | --- | --- |
-|  Clicked on like(heart icon). | The number of the likes went up.  | Pass
-|  Clicked on dislike(thumbs down icon). | The number of the dislikes went up.  | Pass
-|  Wrote a comment. | Recieved notification of comment is awaiting approval.  | Pass
-
-## <strong>Bugs</strong>
-
-### <u>Unsolved Bugs</u>
-- The navigation bar continues to move around the screen even with it being set to absolute. I have been unable to solve the issue. 
-
-### <u>Solved Bugs</u>
-- When adding success messages I found that there was a bug on the DeletePost view.
-- With this view I had to add different code than the others to correct it.
-- I corrected this by adding this code from [stack overflow](https://stackoverflow.com/questions/48777015/djangos-successmessagemixin-not-working-with-deleteview)
-
-<img src="markdown/DeleteBug.png">
-
-## <strong>Deployment</strong>
- 
- ### <u>Github</u>
-
-This website was published using GitHub Pages.
-
-- Navigate to [GitHub](https://github.com/) and log in.
-
-- Navigate to your repositories and find the project you want to deploy
-
-- Under the name of your chosen Repository you will see a ribbon of selections, click on 'Settings' located on the right hand side.
-
-- Scroll down till you see 'Pages' heading on the left hand side
-
-- Under the 'Source' click on the dropdown and select 'master' or 'main' branch and click save
-
-- The page will reload and you'll see the link of your published page displayed under 'GitHub' pages.
-
-- It takes a few minutes for the site to be published, wait until the background of your link changes to a green color before trying to open it.
-
-- Congratulations you have deployed your project!
- 
- This website was written on Gitpod.
- 
- ### <u>Gitpod</u>
- - Navigate to [Gitpod] through [GitHub](https://github.com/), [GitLab](https://www.gitlab.com/).
-- In the browser’s address bar, prefix the entire URL with gitpod.io/# and press Enter.
-- For example, gitpod.io/#https://github.com/gitpod-io/website
-- We recommend you install the Gitpod browser extension to make this a one-click operation.
-- Sign in with one of the listed providers and let the workspace start up.
-- Congratulations, you have started your first of many ephemeral developer environments!
-
-### <u>ElephantSQL</u>
-This website was hosted on elephantSQL.
-- Create a new app.
-- Add a name of the app. This name should be a name that helps you identify which application the instance is used by.
-- Select a plan: The plan you would like to have. I used <strong>Tiny Turtle Plan</strong>
-- Select tags: I left this field blank.
-- Select Region: I selected EU-West-1 (IRELAND).
-- Then click review.
-- Check that the details are correct tthen click <strong>"Create Instance"</strong>.
-- Return to the ElephantSQL dashboard and click on the database instance name for this project.
-- In the URL section, click the copy icon to copy the database URL which will then be put into the envy.py file in gitpod.
-
-### <u>Heroku</u>
-This website was deployed on Heroku. 
-* When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-    1. `heroku/python`
-    2. `heroku/nodejs`
-
-* You must then create a _Config Var_ called `PORT`. Set this to `8000`
-* If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-* Connect your GitHub repository and deploy as normal.
-
+---
 ## <strong>Credits</strong>
 ### <u>Content</u>
 - [startbootstrap.com Clean Blog](https://startbootstrap.com/theme/clean-blog) A bootstrap blog template used for CSS.
