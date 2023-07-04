@@ -78,13 +78,8 @@ This website was published using GitHub Pages.
 - Click reveal config vars.
 
 - Add the config var <strong><i>DATABASE_URL</i></strong>, and for the value, copy in your database url from ElephantSQL.
-- Add the config var <strong><i>AWS_ACCESS_KEY_ID</i></strong>, and for the value, copy and paste from Amazon Web Services. 
-- Add the config var <strong><i>AWS_SECRET_ACCESS_KEY</i></strong>, and for the value, copy and paste from Amazon Web Services.
-- Add the config var <strong><i>USE_AWS</i></strong>, and for the value set it to <i>True</i>.
-- Add the config var <strong><i>STRIPE_PUBLIC_KEY</i></strong>, and for the value, copy and paste from stripe.
-- Add the config var <strong><i>STRIPE_SECRET_KEY</i></strong>, and for the value, copy and paste from stripe.
-- Add the config var <strong><i>STRIPE_WH_SECRET</i></strong>, and for the value, copy and paste from stripe.
-- Add the config var <strong><i>SECRET_KEY</i></strong>, and for the value, copy and paste from secret key generator.
+- Add the config var <strong><i>CLOUDINARY_URL</i></strong>, and for the value, copy and paste from Cloudinary. 
+- Add the config var <strong><i>SECRET_KEY</i></strong>, and for the value, copy and paste from settings.py.
 
 <img src="markdown/heroku-config-vars1.png" width="50%">
 
