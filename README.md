@@ -4,9 +4,9 @@
 # Bawarchi Khana # 
 A Pakistani recipe blog. Bawarchi khana means kitchen in Urdu. This website is deigned to showcase pakistani recipes that can be added by either admin or by a user who has registered to the website. Each user has the ability to like and dislike a recipe post. If the user is also the author of the recipe post they have the option to delete or edit the post. As admin for this blog, they have the option to approve or deny all posts and comments to be published on the website.
 
-:desktop_computer: [Live Website] (https://pp4.herokuapp.com/)
+:desktop_computer: [Live Website](https://pp4.herokuapp.com/)
 
-:open_file_folder: [Github Repository] (https://github.com/eleanorbucke21/PP4)
+:open_file_folder: [Github Repository](https://github.com/eleanorbucke21/PP4)
 
 ---
 
